@@ -20,15 +20,15 @@ if(wall.x-car.x<(car.width+wall.width)/2)
   var deformation =0.5  * weight  *speed/22509;
   if (deformation>180)
   {
-    car.shapeColor=color("yellow");
+    car.shapeColor="red";
   }
 if(deformation<180 && deformation>100)
   {
-    car.shapeColor=color("green");
+    car.shapeColor="yellow";
   }
   if (deformation<100)
   {
-    car.shapeColor=color("red");
+    car.shapeColor="green";
     
   }  
 }
